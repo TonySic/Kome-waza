@@ -1,0 +1,190 @@
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin: 10;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 20px;
+    padding: 30px;
+    color: #003F51;
+    width: 50%;
+
+}
+
+header {
+    background: url(images/header-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+#epices {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 20px;
+    color: #003F51;
+    text-align: end;
+}
+
+#epices h1 {
+    margin-top: 50px;
+
+}
+
+#epices h2 {
+    font-size: 14px;
+}
+
+section ul {
+    list-style: none;
+    font-size: 14px;
+    flex-direction: row;
+}
+
+section li {
+    padding-top: 5px;
+}
+
+#slider {
+    background: url(images/images-slider.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+iframe {
+    filter: grayscale(100%);
+    width: 100vw;
+    height: 400px;
+}
+
+p {
+    margin-top: 50px;
+    font-size: 14px
+}
+
+#sushis {
+    background: url(images/sushis.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+#menu h1 {
+    border-bottom: #003e52 1px solid;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: #003F51;
+    text-align: center;
+}
+
+#footer {
+    background-color: #003e52;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+#menu {
+    text-align: left;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: #003F51;
+    padding-bottom: 50px;
+}
+
+#menu h2 {
+    font-weight: bold;
+}
+
+#menu h3 {
+    color: #89adb8;
+    font-size: 30px;
+    padding-right: 30px;
+}
+
+#footer h1 {
+    margin: 0px;
+    padding-top: 50px;
+}
+
+#footer p {
+    margin: 0px;
+    padding-bottom: 50px;
+    padding-top: 0px
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        position: fixed;
+        background-color: white;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 15px;
+        z-index: 1;
+    }
+
+    nav ul {
+        width: 100vw;
+    }
+
+    #epices img {
+        width: 50%
+    }
+
+    #menu {
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    ul {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 30px auto;
+    }
+
+    #div {
+        padding-right: 30px;
+        padding-left: 30px
+    }
+
+    #epices {
+        flex-direction: column-reverse;
+    }
+
+    #epices img {
+        width: 80%;
+        margin: 0 auto
+    }
+
+    #epices div {
+        margin: 0 auto
+    }
+}
